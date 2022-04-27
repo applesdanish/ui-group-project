@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+<h1>Frequently Asked Questions</h1>
+<br>
+<p1>Read any frequently asked question</p1>
+
+<ul>
+    <br>
+{% for entry in faq_dict %}
+    <li>{{ entry }}
+    </li>
+{% endfor %}
+</ul>
+
+<a href="" class="btn btn-info">Contact Us</a>
+
+{% endblock content %}
+
